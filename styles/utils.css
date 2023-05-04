@@ -8,7 +8,7 @@
 
 .addToCart {
   width: 50%;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--clr-light);
   background-color: #f1f5f9;
   border-radius: 10px;
   padding: 0.3rem 0.5rem;
@@ -19,17 +19,23 @@
 
 .cart, .menuSandwitch {
   width: 4.5rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--clr-light);
   background-color: #f1f5f9;
   border-radius: 10px;
   padding: 0.3rem 0.5rem;
   font-size: var(--size-base);
   transition: transform 0.3s, background-color 0.3s;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: flex-end;
+}
+
+.menuSandwitch {
+  background: none;
+  border: none;
 }
 
 .addToCart:hover, .cart:hover {
-  background-color: #e2e8f0;
+  background-color: var(--clr-light);
   transform: scale(1.05);
 }
 
@@ -44,7 +50,7 @@
     max-width: 475px;
   }
 
-  .addToCart, .cart {
+  .addToCart, .cart, .menuSandwitch {
     font-size: var(--size-l);
   }
 }
@@ -55,7 +61,7 @@
     max-width: 640px;
   }
 
-  .addToCart, .cart {
+  .addToCart, .cart, .menuSandwitch {
     font-size: var(--size-xl);
   }
 }
@@ -66,7 +72,7 @@
     max-width: 768px;
   }
 
-  .addToCart, .cart {
+  .addToCart, .cart, .menuSandwitch {
     font-size: var(--size-2xl);
   }
 }
