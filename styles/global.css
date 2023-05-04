@@ -46,24 +46,22 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-  border: 2px solid var(--clr-light);
-  background-color: #f1f5f9;
-  border-radius: 10px;
-  padding: 0.3rem 0.5rem;
-  font-size: var(--size-base);
-  transition: transform 0.3s, background-color 0.3s;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  align-items: flex-end;
 }
 
 button:hover {
-  background-color: var(--clr-light);
   transform: scale(1.05);
 }
 
 button:active {
   transform: translateY(-2px);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+}
+
+a {
+  color: #551a8b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 :root {
@@ -92,7 +90,7 @@ button:active {
 }
 
 body {
-  background-color: var(--clr-light);
+  background-color: rgba(102, 148, 158, 0.1);
   color: var(--clr-dark);
 }
 

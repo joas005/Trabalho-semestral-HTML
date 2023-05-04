@@ -2,3 +2,48 @@
   padding: 1rem 0.5rem;
   background-color: var(--clr-purple);
 }
+
+.mobile-nav__wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.mobile-nav__icons-list {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.mobile-nav__icons {
+  background-color: rgba(192, 38, 38, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: var(--size-xl);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.mobile-nav__icons:hover {
+  transform: scale(1.05);
+}
+
+.mobile-contact {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--clr-dark);
+  background-color: rgba(192, 38, 38, 0.9);
+  border: 2px solid var(--clr-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s;
+}
+
+@media (min-width: 800px) {
+  .nav__mobile {
+    display: none;
+  }
+}

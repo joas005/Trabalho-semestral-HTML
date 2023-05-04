@@ -3,20 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
+
+    <!-- Linking font awesome -->
     <script
       src="https://kit.fontawesome.com/7accddad18.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Linking font -->
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,501,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="normalize" href="./styles/normalize.css" />
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- My styles -->
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="utils" href="./styles/utils.css" />
-    <link rel="header" href="./styles/components/header.css" />
-    <link rel="desktop-nav" href="./styles/components/desktop-nav.css" />
-    <link rel="mobile-nav" href="./styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/desktop-nav.css" />
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/components/paralax-ad.css" />
+    <link rel="stylesheet" href="./styles/components/category.css" />
+    <link rel="stylesheet" href="./styles/components/products.css" />
+
     <title>Mercado A!</title>
   </head>
   <body>
@@ -40,10 +54,10 @@
       <section class="nav__wrapper">
         <ul class="nav__icons-list">
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-drumstick-bite"></i></a>
+            <a href="#carnes"><i class="fa-solid fa-drumstick-bite"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-cow"></i></a>
+            <a href=""><i class="fa-solid fa-wine-bottle"></i></a>
           </li>
           <li class="nav__icons">
             <a href=""><i class="fa-solid fa-cake-candles"></i></a>
@@ -64,46 +78,529 @@
     <nav class="nav__mobile">
       <section class="mobile-nav__wrapper">
         <ul class="mobile-nav__icons-list">
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-solid fa-drumstick-bite"></i>
-              <p>Section Name</p></a
-            >
-          </li>
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-solid fa-cow"></i>
-              <p>Section Name</p></a
-            >
-          </li>
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-solid fa-cake-candles"></i>
-              <p>Section Name</p></a
-            >
-          </li>
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-solid fa-wine-bottle"></i>
-              <p>Section Name</p></a
-            >
-          </li>
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-brands fa-apple"></i>
-              <p>Section Name</p></a
-            >
-          </li>
-          <li class="mobile-nav__icons">
-            <a href=""
-              ><i class="fa-solid fa-carrot"></i>
-              <p>Section Name</p></a
-            >
-          </li>
+          <a href="#carnes"
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-drumstick-bite"></i>
+              <p>Carnes</p>
+            </li></a
+          >
+          <a href=""
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-wine-bottle"></i>
+              <p>Bebidas</p>
+            </li></a
+          >
+          <a href=""
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-cake-candles"></i>
+              <p>Section Name</p>
+            </li></a
+          >
+          <a href=""
+            ><li class="mobile-nav__icons">
+              <i class=""></i>
+              <p>Section Name</p>
+            </li></a
+          >
+          <a href=""
+            ><li class="mobile-nav__icons">
+              <i class="fa-brands fa-apple"></i>
+              <p>Section Name</p>
+            </li></a
+          >
+          <a href=""
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-carrot"></i>
+              <p>Section Name</p>
+            </li></a
+          >
         </ul>
+        <button class="mobile-contact">Entre em contato conosco!</button>
       </section>
     </nav>
-    <button class="addToCart"><i class="fa-solid fa-cart-plus"></i></button>
+
+    <main>
+      <section class="paralax-ad">
+        <figure class="ad__image-wrap container">
+          <img
+            class="ad__img"
+            src="assets/imagens/propaganda.webp"
+            alt="Anúncio"
+          />
+        </figure>
+      </section>
+
+      <section class="main container">
+        <!-- Começo da 1 categoria -->
+        <div class="category-wrapper container">
+          <div class="category__title acougue" id="carnes">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/categoria1.webp"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Carnes</h2>
+              <p class="category__description">
+                As carnes de melhor qualidade e preços mais acessíveis do
+                brasil!
+              </p>
+            </article>
+          </div>
+
+          <!-- Produtos 1 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img1.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Picanha Friboi tradicional peça a vácuo kg
+                </h3>
+                <span class="product-card__price">R$ 57,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img2.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">Fraldinha Friboi peça kg</h3>
+                <span class="product-card__price">R$ 36,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img3.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">Contrafilé pedaço kg</h3>
+                <span class="product-card__price">R$ 41,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img4.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Paleta de cordeiro Do Chef congelada peça kg
+                </h3>
+                <span class="product-card__price">R$ 45,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img5.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">Cupim Friboi pedaço kg</h3>
+                <span class="product-card__price">R$ 36,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img6.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Picanha suína Pamplona temperada resfriada peça kg
+                </h3>
+                <span class="product-card__price">R$ 26,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img7.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Costela suína Perdigão a granel kg
+                </h3>
+                <span class="product-card__price">R$ 21,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img8.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Bisteca suína Sadia a granel kg
+                </h3>
+                <span class="product-card__price">R$ 17,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img9.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Coxinha da asa de frango a granel kg
+                </h3>
+                <span class="product-card__price">R$ 14,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img10.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Linguiça toscana Seara a granel kg
+                </h3>
+                <span class="product-card__price">R$ 15,29</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card acougue">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img11.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Linguiça calabresa defumada Seara a granel kg
+                </h3>
+                <span class="product-card__price">R$ 18,59</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- Final dos produtos 1 categoria  -->
+          </div>
+          <!-- Final da 1 categoria -->
+        </div>
+
+        <!-- Começo da categoria {} -->
+        <div class="category-wrapper container">
+          <div class="category__title {}" id="{}">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/{}"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">{}</h2>
+              <p class="category__description">
+                As carnes de melhor qualidade e preços mais acessíveis do
+                brasil!
+              </p>
+            </article>
+          </div>
+          <!-- Produtos {} categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card {}">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img18.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Picanha Friboi tradicional peça a vácuo kg
+                </h3>
+                <span class="product-card__price">R$ 57,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Final dos produtos da {} categoria  -->
+        </div>
+        <!-- Final da {} categoria -->
+
+        <!-- Começo da categoria 2 -->
+        <div class="category-wrapper container">
+          <div class="category__title bebida" id="bebida">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/bebidas.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Bebidas</h2>
+              <p class="category__description">
+                Bebidas geladinhas e prontas para serem consumidas por você, com preços que cabem no bolso para matar sua sede.
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 2 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img18.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Refrigerante H2OH! sabores pet 1,5 L
+                </h3>
+                <span class="product-card__price">R$ 4,99</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img19.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Cerveja Bohemia puro malte lata 350 ml
+                </h3>
+                <span class="product-card__price">R$ 2,49 </span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img20.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Espumante Casa Perini moscatel branco 750 ml
+                </h3>
+                <span class="product-card__price">R$ 46,99 </span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img21.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Espumante Salton moscatel branco 750 ml
+                </h3>
+                <span class="product-card__price">R$ 29,90</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img22.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Salton Intenso merlot tinto 750 ml
+                </h3>
+                <span class="product-card__price">R$ 31,90</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img23.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Frisante Mioranza suave rosé 750 ml
+                </h3>
+                <span class="product-card__price">R$ 19,90</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img24.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Frances Bois Mirail Rouge tinto 750 ml
+                </h3>
+                <span class="product-card__price">R$ 31,90 </span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img25.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Chileno Tres Toros cabernet sauvignon tinto 750 ml
+                </h3>
+                <span class="product-card__price">R$ 29,90 </span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <div class="product-card bebida">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img26.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">
+                  Vinho Português Terra Mãe tinto 750 ml
+                </h3>
+                <span class="product-card__price">R$ 30,90 </span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+          </div>
+          <!-- Final dos produtos da 2 categoria  -->
+        </div>
+        <!-- Final da 2 categoria -->
+
+
+
+      </section>
+    </main>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

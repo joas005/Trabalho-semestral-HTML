@@ -1,6 +1,6 @@
 .nav__desktop {
   padding: 1rem 0.5rem;
-  background-color: var(--clr-purple);
+  background: linear-gradient(rgba(88, 86, 172, 0.7), rgba(88, 86, 172, 0.5));
   display: none;
 }
 
@@ -44,15 +44,14 @@
 
 /* L */
 @media (min-width: 1024px) {
-    .nav__icons-list {
-        justify-content: space-around;
-      }
+  .nav__icons-list {
+    justify-content: space-around;
+  }
 
-    .nav__icons {
-        width: 4rem;
-        height: 4rem;
-      }
-      
+  .nav__icons {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 /* XL */

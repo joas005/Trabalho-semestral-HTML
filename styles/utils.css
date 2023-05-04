@@ -2,13 +2,12 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .addToCart {
-  width: 50%;
-  border: 2px solid var(--clr-light);
+  margin-bottom: 0.5rem;
+  width: 80%;
+  border: 1px solid var(--clr-dark);
   background-color: #f1f5f9;
   border-radius: 10px;
   padding: 0.3rem 0.5rem;
@@ -26,6 +25,14 @@
 .addToCart:active {
   transform: translateY(-2px);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.acougue {
+  background-color: #8c1919;
+}
+
+.bebida {
+  background-color: goldenrod;
 }
 
 /* XS */

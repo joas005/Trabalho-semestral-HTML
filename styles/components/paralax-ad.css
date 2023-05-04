@@ -1,0 +1,10 @@
+.ad__image-wrap {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: rgba(102, 148, 158, 0.05);
+}
+
+.ad__img {
+    width: 100%;
+}
