@@ -65,11 +65,3 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid var(--clr-blue);
   border-radius: 10px;
 }
-
-.mobileHeader {
-    background-color: var(--clr-blue);
-    padding: 1.5rem 0.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
