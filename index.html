@@ -13,23 +13,96 @@
     />
     <link rel="normalize" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="utils" href="./styles/utils.css" />
+    <link rel="header" href="./styles/components/header.css" />
+    <link rel="desktop-nav" href="./styles/components/desktop-nav.css" />
+    <link rel="mobile-nav" href="./styles/components/mobile-nav.css" />
     <title>Mercado A!</title>
   </head>
   <body>
     <header class="header">
-      <div class="marketAbout">
-        <figure class="logoWrapper">
+      <div class="header__market">
+        <figure class="logo__wrapper">
           <img src="./assets/imagens/logoA.png" alt="logo" class="logo" />
         </figure>
-        <h1 class="marketName">Supermercado A!</h1>
+        <h1 class="market__name">Supermercado A!</h1>
       </div>
-      <div class="headerButtons">
+      <div class="header__buttons">
         <button class="contact">Entre em contato conosco!</button>
         <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
-        <button class="menuSandwitch"><i class="fa-solid fa-bars"></i></button>
+        <button class="menu__sandwitch">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
+
+    <nav class="nav__desktop">
+      <section class="nav__wrapper">
+        <ul class="nav__icons-list">
+          <li class="nav__icons">
+            <a href=""><i class="fa-solid fa-drumstick-bite"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href=""><i class="fa-solid fa-cow"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href=""><i class="fa-solid fa-cake-candles"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href=""><i class="fa-solid fa-wine-bottle"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href=""><i class="fa-brands fa-apple"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href=""><i class="fa-solid fa-carrot"></i></a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <nav class="nav__mobile">
+      <section class="mobile-nav__wrapper">
+        <ul class="mobile-nav__icons-list">
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-solid fa-drumstick-bite"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-solid fa-cow"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-solid fa-cake-candles"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-solid fa-wine-bottle"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-brands fa-apple"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+          <li class="mobile-nav__icons">
+            <a href=""
+              ><i class="fa-solid fa-carrot"></i>
+              <p>Section Name</p></a
+            >
+          </li>
+        </ul>
+      </section>
+    </nav>
     <button class="addToCart"><i class="fa-solid fa-cart-plus"></i></button>
     <script type="module" src="./src/main.js"></script>
   </body>

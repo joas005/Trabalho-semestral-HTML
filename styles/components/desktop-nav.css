@@ -1,0 +1,64 @@
+.nav__desktop {
+  padding: 1rem 0.5rem;
+  background-color: var(--clr-purple);
+  display: none;
+}
+
+.nav__wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.nav__icons-list {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav__icons {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--clr-red);
+  border-radius: 2rem;
+  color: var(--clr-light);
+  display: grid;
+  place-items: center;
+  font-size: var(--size-2xl);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav__icons:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 800px) {
+  .nav__desktop {
+    display: block;
+  }
+}
+
+/* L */
+@media (min-width: 1024px) {
+    .nav__icons-list {
+        justify-content: space-around;
+      }
+
+    .nav__icons {
+        width: 4rem;
+        height: 4rem;
+      }
+      
+}
+
+/* XL */
+@media (min-width: 1280px) {
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+}

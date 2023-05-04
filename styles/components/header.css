@@ -1,0 +1,140 @@
+.header {
+  background-color: var(--clr-blue);
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header__market {
+  flex-grow: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 2rem;
+  background-color: var(--clr-light);
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.market__name {
+  margin-left: 1rem;
+  color: var(--clr-light);
+  font-size: var(--size-xl);
+  font-style: italic;
+  display: none;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  display: none;
+  margin-right: 1rem;
+}
+
+.cart,
+.menu__sandwitch {
+  width: 4.5rem;
+  border: 2px solid #e2e8f0;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 0.3rem 0.5rem;
+  font-size: var(--size-base);
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu__sandwitch {
+  background: none;
+  border: none;
+}
+
+.cart:hover {
+  background-color: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.cart:hover,
+.menu__sandwitch:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* XS */
+@media (min-width: 475px) {
+  .header__market {
+    display: inline-block;
+  }
+
+  .logo__wrapper {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .logo {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .header__market {
+    font-size: var(--size-2xl);
+  }
+}
+
+.cart,
+.menu__sandwitch {
+  font-size: var(--size-l);
+}
+
+/* S */
+@media (min-width: 640px) {
+  .header__market {
+    font-size: var(--size-3xl);
+  }
+
+  .cart,
+  .menu__sandwitch {
+    font-size: var(--size-xl);
+  }
+}
+
+/* M */
+@media (min-width: 800px) {
+  .cart {
+    font-size: var(--size-2xl);
+  }
+
+  .menu__sandwitch {
+    display: none;
+  }
+
+  .contact {
+    display: block;
+  }
+}
+
+/* L */
+@media (min-width: 1024px) {
+}
+
+/* XL */
+@media (min-width: 1280px) {
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+}
