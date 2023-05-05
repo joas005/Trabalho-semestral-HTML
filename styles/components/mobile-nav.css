@@ -25,6 +25,7 @@
   font-size: var(--size-xl);
   cursor: pointer;
   transition: transform 0.3s;
+  color: var(--clr-light);
 }
 
 .mobile-nav__icons:hover {

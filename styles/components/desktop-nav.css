@@ -23,12 +23,15 @@
   height: 3rem;
   background-color: var(--clr-red);
   border-radius: 2rem;
-  color: var(--clr-light);
   display: grid;
   place-items: center;
   font-size: var(--size-2xl);
   cursor: pointer;
   transition: transform 0.3s;
+}
+
+.nav__icons a {
+  color: var(--clr-light);
 }
 
 .nav__icons:hover {
