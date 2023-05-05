@@ -35,11 +35,13 @@
     <link rel="stylesheet" href="./styles/components/category.css" />
     <link rel="stylesheet" href="./styles/components/products.css" />
     <link rel="stylesheet" href="./styles/components/forms.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/modal.css" />
 
     <title>Mercado A!</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__market">
         <figure class="logo__wrapper">
           <img src="./assets/imagens/logoA.png" alt="logo" class="logo" />
@@ -50,12 +52,28 @@
         <button class="contact">
           <a href="#contato">Entre em contato conosco!</a>
         </button>
-        <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart__item-counter">0</span>
+        </button>
         <button class="menu__sandwitch">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
+
+    <!-- Popup de adicionado ao carrinho -->
+
+    <dialog>
+      <div class="modal__buttons">
+        <i class="fa-regular fa-circle-check"></i>
+        <h3 class="modal__text">O item foi adicionado ao seu carrinho!</h3>
+        <button class="close__modal"><i class="fa-solid fa-x"></i></button>
+      </div>
+      <button class="remove__button">Não adicionar</button>
+    </dialog>
+
+    <!-- Final do popup -->
 
     <nav class="nav__desktop">
       <section class="nav__wrapper">
@@ -129,16 +147,6 @@
     </nav>
 
     <main>
-      <section class="paralax-ad">
-        <figure class="ad__image-wrap container">
-          <img
-            class="ad__img"
-            src="assets/imagens/propaganda.webp"
-            alt="Anúncio"
-          />
-        </figure>
-      </section>
-
       <section class="main container">
         <!-- Começo da 1 categoria -->
         <div class="category-wrapper container">
@@ -367,6 +375,8 @@
           </div>
           <!-- Final da 1 categoria -->
         </div>
+
+        <section class="paralax-ad"></section>
 
         <!-- Começo da categoria {} -->
         <div class="category-wrapper container">
@@ -642,9 +652,10 @@
         </aside>
         <aside class="forms__right">
           <h1 class="right__title">Fale conosco</h1>
-          <form method="get" action="" class="right__forms">
+          <form method="get" action="" class="forms-sheet">
             <label for="nome" class="forms__label">Nome:*</label>
             <input
+              maxlength="35"
               class="forms__input"
               type="text"
               name="txtnome"
@@ -652,9 +663,9 @@
               required
               placeholder="Nome completo"
             />
-            <br />
             <label for="email" class="forms__label">E-mail:*</label>
             <input
+              maxlength="30"
               class="forms__input"
               type="text"
               neme="txtemail"
@@ -662,35 +673,53 @@
               required
               placeholder="exemplo@email.com"
             />
-            <br />
             <label for="razao" class="forms__label"
               >Explique a razão do seu contato:*</label
             >
             <input
-              class="forms__label"
+              maxlength="25"
+              placeholder="Exemplo: sugestão"
+              class="forms__input"
               type="text"
               neme="txtrazao"
               id="razao"
               required
             />
-            <br />
-            <br />
-            <label for="text" class="forms__label">Sua mensagem:*</label><br />
+            <label for="text" class="forms__label">Sua mensagem:*</label>
             <textarea
+              rows="3"
+              maxlength="120"
+              placeholder="Escreva algo aqui"
               class="forms__input"
               type="text"
               neme="txtmensgem"
               id="mensagem"
               required
-            >
-            </textarea>
-            <br />
+            ></textarea>
             <button class="forms__send">Enviar mensagem</button>
           </form>
         </aside>
       </section>
     </main>
-    <footer></footer>
-    <script type="module" src="./src/main.js"></script>
+    <footer>
+      <section class="footer container">
+        <h3 class="footer__trademark">&copy; Supermercado A!</h3>
+        <div class="footer__icons-wrapper">
+          <a href="#header"
+            ><i class="fa-sharp fa-solid fa-arrow-up" class="footer__icons"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-instagram" class="footer__icons"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-facebook" class="footer__icons"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-twitter" class="footer__icons"></i
+          ></a>
+        </div>
+      </section>
+    </footer>
+    <script src="./src/main.js" type="module"></script>
   </body>
 </html>

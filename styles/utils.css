@@ -28,11 +28,11 @@
 }
 
 .acougue {
-  background-color: #8c1919;
+  background-color: #8c1919c4;
 }
 
 .bebida {
-  background-color: goldenrod;
+  background-color: rgba(218, 165, 32, 0.74);
 }
 
 /* XS */

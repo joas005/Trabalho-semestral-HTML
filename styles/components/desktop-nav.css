@@ -44,7 +44,6 @@
   }
 }
 
-/* L */
 @media (min-width: 1024px) {
   .nav__icons-list {
     justify-content: space-around;
@@ -54,12 +53,4 @@
     width: 4rem;
     height: 4rem;
   }
-}
-
-/* XL */
-@media (min-width: 1280px) {
-}
-
-/* 2XL */
-@media (min-width: 1536px) {
 }

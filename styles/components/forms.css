@@ -1,12 +1,12 @@
 .forms {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .left__info {
-  padding: 3rem;
+  padding: 8rem 2rem;
   position: relative;
   background-image: url("../../assets/imagens/background-forms.jpg");
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@
   display: grid;
   place-content: center;
   color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
 }
 
 .left__info::after {
@@ -37,26 +38,76 @@
 }
 
 .info__wrapper div {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .info__icon {
-    font-size: var(--size-base);
+  font-size: var(--size-base);
 }
 
 .info__text h3 {
-    font-size: var(--size-l);
-    font-weight: 700;
+  font-size: var(--size-l);
+  font-weight: 700;
 }
 
 .info__text p {
-    font-size: var(--size-base);
-    font-weight: 500;
+  font-size: var(--size-s);
+  font-weight: 500;
 }
 
 .forms__right {
-  padding: 0 2rem;
+  padding: 2rem;
+  background-color: var(--clr-light);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.right__title {
+  text-align: center;
+  font-size: var(--size-3xl);
+}
+
+.forms-sheet {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.forms__label {
+  font-size: var(--size-xl);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.forms__input {
+  margin-bottom: 1rem;
+  line-height: 1.5em;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+  padding-left: 1em;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: rgba(109, 113, 114, 0.15);
+}
+
+.forms__send {
+  padding: 0.5em;
+  background-color: #cbd5e1;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -64,5 +115,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .left__info {
+    padding: 12.8rem 2rem;
   }
 }

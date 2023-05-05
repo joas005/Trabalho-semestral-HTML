@@ -53,7 +53,6 @@
     }
 }
 
-/* S */
 @media (min-width: 640px) {
     .category__description {
         display: block;
@@ -68,11 +67,6 @@
     }
 }
 
-/* M */
-@media (min-width: 768px) {
-}
-
-/* L */
 @media (min-width: 1024px) {
     .category__name {
         font-size: var(--size-3xl);
@@ -83,11 +77,6 @@
     }
 }
 
-/* XL */
-@media (min-width: 1280px) {
-}
-
-/* 2XL */
 @media (min-width: 1536px) {
     .category__name {
         font-size: var(--size-4xl);

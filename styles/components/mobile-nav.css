@@ -1,5 +1,13 @@
 .nav__mobile {
-  padding: 1rem 0.5rem;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid green;
+  z-index: 999;
+  width: 98vw;
+  height: 100vh;
+  padding: 4rem 0.5rem 0;
   background-color: var(--clr-purple);
 }
 
@@ -43,7 +51,7 @@
 }
 
 .mobile-contact a {
-  color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 @media (min-width: 800px) {
