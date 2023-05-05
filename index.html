@@ -17,6 +17,10 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,501,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=zodiak@701&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Normalize -->
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -30,6 +34,7 @@
     <link rel="stylesheet" href="./styles/components/paralax-ad.css" />
     <link rel="stylesheet" href="./styles/components/category.css" />
     <link rel="stylesheet" href="./styles/components/products.css" />
+    <link rel="stylesheet" href="./styles/components/forms.css" />
 
     <title>Mercado A!</title>
   </head>
@@ -42,7 +47,9 @@
         <h1 class="market__name">Supermercado A!</h1>
       </div>
       <div class="header__buttons">
-        <button class="contact">Entre em contato conosco!</button>
+        <button class="contact">
+          <a href="#contato">Entre em contato conosco!</a>
+        </button>
         <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
         <button class="menu__sandwitch">
           <i class="fa-solid fa-bars"></i>
@@ -57,7 +64,7 @@
             <a href="#carnes"><i class="fa-solid fa-drumstick-bite"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-wine-bottle"></i></a>
+            <a href="#bebida"><i class="fa-solid fa-wine-bottle"></i></a>
           </li>
           <li class="nav__icons">
             <a href=""><i class="fa-solid fa-cake-candles"></i></a>
@@ -84,7 +91,7 @@
               <p>Carnes</p>
             </li></a
           >
-          <a href=""
+          <a href="#bebida"
             ><li class="mobile-nav__icons">
               <i class="fa-solid fa-wine-bottle"></i>
               <p>Bebidas</p>
@@ -115,7 +122,9 @@
             </li></a
           >
         </ul>
-        <button class="mobile-contact">Entre em contato conosco!</button>
+        <button class="mobile-contact">
+          <a href="#contato">Entre em contato conosco!</a>
+        </button>
       </section>
     </nav>
 
@@ -415,7 +424,8 @@
             <article class="category__about">
               <h2 class="category__name">Bebidas</h2>
               <p class="category__description">
-                Bebidas geladinhas e prontas para serem consumidas por você, com preços que cabem no bolso para matar sua sede.
+                Bebidas geladinhas e prontas para serem consumidas por você, com
+                preços que cabem no bolso para matar sua sede.
               </p>
             </article>
           </div>
@@ -591,16 +601,96 @@
                 <i class="fa-solid fa-cart-plus"></i>
               </button>
             </div>
-
           </div>
           <!-- Final dos produtos da 2 categoria  -->
         </div>
         <!-- Final da 2 categoria -->
+      </section>
 
-
-
+      <section class="forms container" id="contato">
+        <aside class="forms__left">
+          <div class="left__info">
+            <ul class="info__wrapper">
+              <div>
+                <li class="info__icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </li>
+                <li class="info__text">
+                  <h3>Onde estamos</h3>
+                  <p>
+                    Av. Reg. Feijó, 1759 - Vila Reg. Feijó, São Paulo - SP,
+                    03550-100
+                  </p>
+                </li>
+              </div>
+              <div>
+                <li class="info__icon"><i class="fa-solid fa-phone"></i></li>
+                <li class="info__text">
+                  <h3>Telefone</h3>
+                  <p>+55 (11) 99128-3214</p>
+                </li>
+              </div>
+              <div>
+                <li class="info__icon"><i class="fa-solid fa-clock"></i></li>
+                <li class="info__text">
+                  <h3>Horário</h3>
+                  <p>07:00 - 18:30</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </aside>
+        <aside class="forms__right">
+          <h1 class="right__title">Fale conosco</h1>
+          <form method="get" action="" class="right__forms">
+            <label for="nome" class="forms__label">Nome:*</label>
+            <input
+              class="forms__input"
+              type="text"
+              name="txtnome"
+              id="nome"
+              required
+              placeholder="Nome completo"
+            />
+            <br />
+            <label for="email" class="forms__label">E-mail:*</label>
+            <input
+              class="forms__input"
+              type="text"
+              neme="txtemail"
+              id="email"
+              required
+              placeholder="exemplo@email.com"
+            />
+            <br />
+            <label for="razao" class="forms__label"
+              >Explique a razão do seu contato:*</label
+            >
+            <input
+              class="forms__label"
+              type="text"
+              neme="txtrazao"
+              id="razao"
+              required
+            />
+            <br />
+            <br />
+            <label for="text" class="forms__label">Sua mensagem:*</label><br />
+            <textarea
+              class="forms__input"
+              type="text"
+              neme="txtmensgem"
+              id="mensagem"
+              required
+            >
+            </textarea>
+            <br />
+            <button class="forms__send">Enviar mensagem</button>
+          </form>
+        </aside>
       </section>
     </main>
+    <footer></footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

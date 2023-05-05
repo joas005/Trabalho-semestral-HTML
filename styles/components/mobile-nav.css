@@ -34,12 +34,15 @@
 .mobile-contact {
   font-weight: 500;
   margin-top: 1rem;
-  color: var(--clr-dark);
   background-color: rgba(192, 38, 38, 0.9);
   border: 2px solid var(--clr-dark);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: transform 0.3s;
+}
+
+.mobile-contact a {
+  color: var(--clr-dark);
 }
 
 @media (min-width: 800px) {
