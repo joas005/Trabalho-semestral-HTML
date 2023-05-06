@@ -65,12 +65,16 @@
     <!-- Popup de adicionado ao carrinho -->
 
     <dialog>
-      <div class="modal__buttons">
-        <i class="fa-regular fa-circle-check"></i>
-        <h3 class="modal__text">O item foi adicionado ao seu carrinho!</h3>
+      <section class="modal">
+        <aside class="modal__check-icon">
+          <i class="fa-regular fa-circle-check"></i>
+        </aside>
+        <div class="modal__main">
+          <h3 class="modal__text">Item adicionado ao carrinho!</h3>
+          <button class="remove__button">Não adicionar</button>
+        </div>
         <button class="close__modal"><i class="fa-solid fa-x"></i></button>
-      </div>
-      <button class="remove__button">Não adicionar</button>
+      </section>
     </dialog>
 
     <!-- Final do popup -->
@@ -85,16 +89,22 @@
             <a href="#bebida"><i class="fa-solid fa-wine-bottle"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-cake-candles"></i></a>
+            <a href="#verduras"><i class="fa-solid fa-carrot"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-wine-bottle"></i></a>
+            <a href="#frutas"><i class="fa-brands fa-apple"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-brands fa-apple"></i></a>
+            <a href="#peixes"><i class="fa-solid fa-fish-fins"></i></a>
           </li>
           <li class="nav__icons">
-            <a href=""><i class="fa-solid fa-carrot"></i></a>
+            <a href="#higiene"><i class="fa-solid fa-pump-soap"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href="#doces"><i class="fa-solid fa-cake-candles"></i></a>
+          </li>
+          <li class="nav__icons">
+            <a href="#outros"><i class="fa-solid fa-bowl-food"></i></a>
           </li>
         </ul>
       </section>
@@ -115,28 +125,40 @@
               <p>Bebidas</p>
             </li></a
           >
-          <a href=""
-            ><li class="mobile-nav__icons">
-              <i class="fa-solid fa-cake-candles"></i>
-              <p>Section Name</p>
-            </li></a
-          >
-          <a href=""
-            ><li class="mobile-nav__icons">
-              <i class=""></i>
-              <p>Section Name</p>
-            </li></a
-          >
-          <a href=""
-            ><li class="mobile-nav__icons">
-              <i class="fa-brands fa-apple"></i>
-              <p>Section Name</p>
-            </li></a
-          >
-          <a href=""
+          <a href="#verduras"
             ><li class="mobile-nav__icons">
               <i class="fa-solid fa-carrot"></i>
-              <p>Section Name</p>
+              <p>Verduras e legumes</p>
+            </li></a
+          >
+          <a href="#frutas"
+            ><li class="mobile-nav__icons">
+              <i class="fa-brands fa-apple"></i>
+              <p>Frutas</p>
+            </li></a
+          >
+          <a href="#peixes"
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-fish-fins"></i>
+              <p>Frutos do mar</p>
+            </li></a
+          >
+          <a href="#higiene"
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-pump-soap"></i>
+              <p>Higiene e limpeza</p>
+            </li></a
+          >
+          <a href="#doces"
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-cake-candles"></i>
+              <p>Doces</p>
+            </li></a
+          >
+          <a href="#outros"
+            ><li class="mobile-nav__icons">
+              <i class="fa-solid fa-bowl-food"></i>
+              <p>Outros</p>
             </li></a
           >
         </ul>
@@ -378,49 +400,6 @@
 
         <section class="paralax-ad"></section>
 
-        <!-- Começo da categoria {} -->
-        <div class="category-wrapper container">
-          <div class="category__title {}" id="{}">
-            <figure class="category-image__wrap">
-              <img
-                class="category__img"
-                src="assets/imagens/{}"
-                alt="Imagem da categoria"
-              />
-            </figure>
-            <article class="category__about">
-              <h2 class="category__name">{}</h2>
-              <p class="category__description">
-                As carnes de melhor qualidade e preços mais acessíveis do
-                brasil!
-              </p>
-            </article>
-          </div>
-          <!-- Produtos {} categoria -->
-          <div class="products__wrapper container">
-            <div class="product-card {}">
-              <article class="product-card__about">
-                <figure class="product-card__img-wrap">
-                  <img
-                    class="product-card__img"
-                    src="assets/imagens/img18.png"
-                    alt="produto"
-                  />
-                </figure>
-                <h3 class="product-card__name">
-                  Picanha Friboi tradicional peça a vácuo kg
-                </h3>
-                <span class="product-card__price">R$ 57,99</span>
-              </article>
-              <button class="addToCart">
-                <i class="fa-solid fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-          <!-- Final dos produtos da {} categoria  -->
-        </div>
-        <!-- Final da {} categoria -->
-
         <!-- Começo da categoria 2 -->
         <div class="category-wrapper container">
           <div class="category__title bebida" id="bebida">
@@ -615,6 +594,275 @@
           <!-- Final dos produtos da 2 categoria  -->
         </div>
         <!-- Final da 2 categoria -->
+
+        <!-- Começo da categoria 3 -->
+        <div class="category-wrapper container">
+          <div class="category__title verduras" id="verduras">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/verduras-e-legumes.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Verduras e Legumes</h2>
+              <p class="category__description">
+                Mais saude na sua vida e mais sabor no sua mesa.
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 3 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card verduras">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR LEGUMES E VERDURAS AQUI: -->
+
+            <!-- FIM LEGUMES E VERDURAS -->
+          </div>
+          <!-- Final dos produtos da 3 categoria  -->
+        </div>
+        <!-- Final da 3 categoria -->
+
+        <!-- Começo da categoria 4 -->
+        <div class="category-wrapper container">
+          <div class="category__title frutas" id="frutas">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/frutas.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Frutas</h2>
+              <p class="category__description">
+                Comer bem não precisa ser sinônimo de pagar caro. aqui você
+                encontra frutas altíssima qualidade!
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 4 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card frutas">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR FRUTAS AQUI: -->
+
+            <!-- FIM FRUTAS -->
+          </div>
+          <!-- Final dos produtos da 4 categoria  -->
+        </div>
+        <!-- Final da 4 categoria -->
+
+        <!-- Começo da categoria 5 -->
+        <div class="category-wrapper container">
+          <div class="category__title peixes" id="peixes">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/peixes.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Frutos do mar</h2>
+              <p class="category__description">
+                Os melhores e mais frescos frutos do mar de todas as variedades
+                aqui pertinho de você!
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 5 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card peixes">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR PEIXES AQUI: -->
+
+            <!-- FIM PEIXES -->
+          </div>
+          <!-- Final dos produtos da 5 categoria  -->
+        </div>
+        <!-- Final da 5 categoria -->
+
+        <section class="paralax-ad2"></section>
+
+        <!-- Começo da categoria 6 -->
+        <div class="category-wrapper container">
+          <div class="category__title higiene" id="higiene">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/higiene.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Higiene e limpeza</h2>
+              <p class="category__description">
+                Nada melhor do que manter você e suas roupas cheirando bem.
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 6 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card higiene">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR HIGIENE AQUI: -->
+
+            <!-- FIM HIGIENE -->
+          </div>
+          <!-- Final dos produtos da 6 categoria  -->
+        </div>
+        <!-- Final da 6 categoria -->
+
+        <!-- Começo da categoria 7 -->
+        <div class="category-wrapper container">
+          <div class="category__title doces" id="doces">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/doces.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Doces</h2>
+              <p class="category__description">
+                Os doces mais gostosos pra você fazer aquela receitinha!
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 7 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card doces">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR DOCES AQUI: -->
+
+            <!-- FIM DOCES -->
+          </div>
+          <!-- Final dos produtos da 7 categoria  -->
+        </div>
+        <!-- Final da 7 categoria -->
+
+        <!-- Começo da categoria 8 -->
+        <div class="category-wrapper container">
+          <div class="category__title outros" id="outros">
+            <figure class="category-image__wrap">
+              <img
+                class="category__img"
+                src="assets/imagens/outros.jpg"
+                alt="Imagem da categoria"
+              />
+            </figure>
+            <article class="category__about">
+              <h2 class="category__name">Outros</h2>
+              <p class="category__description">
+                Aqueles ingredientes que não podem faltar em casa! Que sempre
+                melhora suas receitas e seus dias.
+              </p>
+            </article>
+          </div>
+          <!-- Produtos 8 categoria -->
+          <div class="products__wrapper container">
+            <div class="product-card outros">
+              <article class="product-card__about">
+                <figure class="product-card__img-wrap">
+                  <img
+                    class="product-card__img"
+                    src="assets/imagens/img{num imagem}.png"
+                    alt="produto"
+                  />
+                </figure>
+                <h3 class="product-card__name">{nome do produto}</h3>
+                <span class="product-card__price">R$ {preço produto}</span>
+              </article>
+              <button class="addToCart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+
+            <!-- INSERIR MARGARINA GRÃOS E TEMPERO AQUI: -->
+
+            <!-- FIM MARGARINA GRÃOS E TEMPERO -->
+          </div>
+          <!-- Final dos produtos da 8 categoria  -->
+        </div>
+        <!-- Final da 8 categoria -->
       </section>
 
       <section class="forms container" id="contato">

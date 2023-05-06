@@ -28,11 +28,35 @@
 }
 
 .acougue {
-  background-color: #8c1919c4;
+  background-color: rgba(140, 25, 25, 0.7);
 }
 
 .bebida {
-  background-color: rgba(218, 165, 32, 0.74);
+  background-color: rgba(218, 165, 32, 0.7);
+}
+
+.verduras {
+  background-color: rgba(101, 163, 13, 0.7);
+}
+
+.frutas {
+  background-color: rgb(225, 29, 72, 0.7);
+}
+
+.peixes {
+  background-color: rgb(15, 118, 110, 0.7);
+}
+
+.higiene {
+  background-color: #a5b4fc;
+}
+
+.doces {
+  background-color: rgba(232, 121, 249, 0.7);
+}
+
+.outros {
+  background-color: rgba(250, 204, 21, 0.5);
 }
 
 /* XS */

@@ -12,6 +12,7 @@
 }
 
 .mobile-nav__wrapper {
+  margin-top: 1.5rem;
   display: grid;
   place-items: center;
 }

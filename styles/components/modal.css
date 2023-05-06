@@ -10,82 +10,92 @@ dialog {
   max-width: 60ch;
 }
 
-.modal-popup {
+.modal {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.modal__buttons {
+.modal__check-icon {
   color: var(--clr-light);
-  margin: 0 auto;
+  font-size: var(--size-3xl);
+}
+
+.modal__main {
+  padding-left: 0.5rem;
+  flex-grow: 1;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .modal__text {
-  font-size: var(--size-xl);
+  margin: 0;
+  color: var(--clr-light);
+  font-size: var(--size-base);
   font-weight: 600;
   letter-spacing: 0.025em;
   text-align: center;
-  flex-grow: 1;
 }
 
 .close__modal {
-  align-self: flex-start;
-  padding: 0.25em 0.5em;
-  font-weight: 400;
+  color: var(--clr-light);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: var(--size-s);
 }
 
 .remove__button {
-  margin: 0 auto;
+  font-size: var(--size-s);
   background-color: var(--clr-red);
   padding: 0.25em 0.5em;
   font-weight: 600;
   color: var(--clr-light);
   border-radius: 10px;
-  border: 2px solid black;
-}
-
-@media (min-width: 475px) {
-  .modal__text {
-    font-size: var(--size-2xl);
-    margin-bottom: 1rem;
-  }
-
-  .remove__button {
-    font-size: var(--size-l);
-  }
-
-  .close__modal {
-    font-size: var(--size-l);
-  }
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 640px) {
-  .modal__text {
-    font-size: var(--size-2xl);
+  .modal__check-icon {
+    font-size: var(--size-4xl);
   }
 
-  .remove__button {
-    font-size: var(--size-xl);
+  .modal__main {
+    padding-left: 0.5rem;
+  }
+
+  .modal__text {
+    font-size: var(--size-l);
   }
 
   .close__modal {
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
+  }
+
+  .remove__button {
+    font-size: var(--size-base);
   }
 }
 
-@media (min-width: 768px) {
-  .modal__text {
-    font-size: var(--size-2xl);
+@media (min-width: 1024px) {
+  .modal__check-icon {
+    font-size: var(--size-5xl);
   }
 
-  .remove__button {
+  .modal__main {
+    padding-left: 1rem;
+  }
+
+  .modal__text {
     font-size: var(--size-xl);
   }
 
   .close__modal {
-    font-size: var(--size-xl);
+    font-size: var(--size-l);
+  }
+
+  .remove__button {
+    font-size: var(--size-l);
   }
 }

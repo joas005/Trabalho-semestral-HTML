@@ -15,12 +15,12 @@ const addToCart = () => {
       modal.showModal();
       cart.style.position = "fixed";
       cart.style.right = "80px";
-      cart.style.boxShadow = "4px 4px 5px 0px rgba(235,68,90,1";
+      cart.style.boxShadow = "4px 4px 5px 0px rgba(235,68,90,1)";
       if (modal.showModal) {
         setTimeout(() => {
-            modal.close();
-          }, 3000);
-      } 
+          modal.close();
+        }, 3000);
+      }
     });
   });
 
@@ -32,6 +32,11 @@ const addToCart = () => {
 
   const updateValue = () => {
     value.innerHTML = count;
+    if (count < 1) {
+      cart.style.position = "relative";
+      cart.style.right = "auto";
+      cart.style.boxShadow = "none";
+    }
   };
 
   modalButton.addEventListener("click", () => {

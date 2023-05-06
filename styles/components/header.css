@@ -94,7 +94,6 @@
   width: 5rem;
   font-size: var(--size-l);
   transition: transform 0.3s;
-  margin-bottom: 1rem;
 }
 
 .menu__sandwitch:hover {
