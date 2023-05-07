@@ -8,7 +8,7 @@
   margin-bottom: 0.5rem;
   width: 80%;
   border: 1px solid var(--clr-dark);
-  background-color: #f1f5f9;
+  background-color: #406abf;
   border-radius: 10px;
   padding: 0.3rem 0.5rem;
   font-size: var(--size-base);
@@ -56,7 +56,7 @@
 }
 
 .outros {
-  background-color: rgba(250, 204, 21, 0.5);
+  background-color: rgba(217, 119, 6, 0.7);
 }
 
 /* XS */

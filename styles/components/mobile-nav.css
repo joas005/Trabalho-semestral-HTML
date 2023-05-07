@@ -8,7 +8,7 @@
   width: 98vw;
   height: 100vh;
   padding: 4rem 0.5rem 0;
-  background-color: var(--clr-purple);
+  background-image: linear-gradient(to right top, #315292, #396295, #4a7196, #607e96, #798b96);
 }
 
 .mobile-nav__wrapper {
@@ -28,13 +28,18 @@
 }
 
 .mobile-nav__icons {
-  background-color: rgba(192, 38, 38, 0.9);
+  background-color: #2d4a86;
   border-radius: 10px;
   padding: 1rem;
   font-size: var(--size-xl);
   cursor: pointer;
   transition: transform 0.3s;
   color: var(--clr-light);
+  min-height: 7rem;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  border: 1px solid rgba(163, 163, 163, 0.5);
 }
 
 .mobile-nav__icons:hover {
@@ -44,8 +49,8 @@
 .mobile-contact {
   font-weight: 500;
   margin-top: 1rem;
-  background-color: rgba(192, 38, 38, 0.9);
-  border: 2px solid var(--clr-dark);
+  background-color: #2d4a86;
+  border: 1px solid var(--clr-dark);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: transform 0.3s;

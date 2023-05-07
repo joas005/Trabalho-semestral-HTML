@@ -21,13 +21,14 @@
 .nav__icons {
   width: 3rem;
   height: 3rem;
-  background-color: var(--clr-red);
+  background-color: #406abf;
   border-radius: 2rem;
   display: grid;
   place-items: center;
   font-size: var(--size-2xl);
   cursor: pointer;
   transition: transform 0.3s;
+  border: 1px solid rgba(163, 163, 163, 0.5);
 }
 
 .nav__icons a {

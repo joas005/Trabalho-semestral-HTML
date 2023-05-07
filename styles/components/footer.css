@@ -20,6 +20,7 @@ footer {
     font-weight: 300;
     margin-bottom: 0.5rem;
     color: var(--clr-light);
+    font-family: "Neco", serif;
 }
 
 .footer__icons-wrapper {

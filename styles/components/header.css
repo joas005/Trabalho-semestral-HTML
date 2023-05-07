@@ -24,6 +24,7 @@
   height: 3.2rem;
   border-radius: 2rem;
   background-color: var(--clr-light);
+  border: 1px solid rgba(163, 163, 163, 0.5);
 }
 
 .logo {
@@ -37,7 +38,7 @@
   font-size: var(--size-xl);
   font-style: italic;
   display: none;
-  font-family: "Zodiak", serif;
+  font-family: "Neco", serif;
 }
 
 .header__buttons {
@@ -48,8 +49,8 @@
 .contact {
   display: none;
   margin-right: 1rem;
-  background-color: rgba(192, 38, 38, 0.9);
-  border: 2px solid var(--clr-dark);
+  background-color: #406abf;
+  border: 1px solid var(--clr-dark);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: transform 0.3s;
@@ -89,6 +90,7 @@
 }
 
 .menu__sandwitch {
+  color: #2d4a86;
   position: relative;
   z-index: 99999;
   width: 5rem;
